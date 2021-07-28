@@ -1,4 +1,4 @@
-"# react-portfolio" 
+## react-portfolio
 
 I'm remaking my current personal portfolio in React. 
 
