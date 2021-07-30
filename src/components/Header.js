@@ -10,13 +10,13 @@ const Header = () => {
 
       <nav>
         <a href='#title'>
-          <span class='hover'>Home</span>
+          <span className='hover'>Home</span>
         </a>
         <a href='#projects'>
-          <span class='hover'>Projects</span>
+          <span className='hover'>Projects</span>
         </a>
         <a href='#contact'>
-          <span class='hover'>Contact</span>
+          <span className='hover'>Contact</span>
         </a>
       </nav>
     </header>
