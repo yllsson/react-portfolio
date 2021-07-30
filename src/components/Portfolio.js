@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Project from './Project';
 import ContactTile from './ContactTile';
 import projectsData from '../data/projectsData';
@@ -6,6 +6,34 @@ import contactData from '../data/contactData';
 import Header from './Header';
 
 const Portfolio = () => {
+  const [siteHasLoaded, setSiteHasLoaded] = useState(false);
+
+  const assignLoadClasses = () => {
+    // TITLE ANIMATION //
+    const titleImgContainer = document.getElementById('titleImages');
+    const titleHeadersContainer = document.getElementById('titleHeaders');
+
+    titleImgContainer.classList.add('loaded');
+    titleHeadersContainer.classList.add('loaded');
+
+    // PROJECT SECTION CLASS ASSIGNMENT //
+    const projects = document.querySelectorAll('.project');
+
+    projects.forEach((project, index) => {
+      if (index % 2 !== 0) {
+        project.classList.add('projectReversed');
+      }
+    });
+  };
+
+  useEffect(() => {
+    setSiteHasLoaded(true);
+  }, []);
+
+  useEffect(() => {
+    assignLoadClasses();
+  }, [siteHasLoaded]);
+
   return (
     <div>
       <Header />
