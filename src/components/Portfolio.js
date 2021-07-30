@@ -37,60 +37,6 @@ const Portfolio = () => {
             key={idx}
           />
         ))}
-
-        <article className='project centeredImg'>
-          <img
-            src='pics/drumMachine.png'
-            alt='Screenshot of my Drum Machine project'
-          />
-          <a
-            className='imgLink'
-            href='https://yllsson.github.io/fcc-drum-machine/'
-          ></a>
-          <div className='projectInfo'>
-            <h3>
-              <a
-                className='hover'
-                href='https://yllsson.github.io/fcc-drum-machine/'
-              >
-                Drum Machine
-              </a>
-            </h3>
-            <h3>
-              <i className='fab fa-react'></i>
-              <i className='fab fa-sass'></i>
-              <i className='fab fa-html5'></i>
-              <i className='fab fa-css3-alt'></i>
-              <i className='fab fa-js-square'></i>
-            </h3>
-          </div>
-        </article>
-
-        <article className='project'>
-          <img
-            src='pics/rockPaperScissors3.png'
-            alt='Picture of my Rock Paper Scissors project'
-          />
-          <a
-            className='imgLink'
-            href='https://yllsson.github.io/rockpaperscissors/'
-          ></a>
-          <div className='projectInfo'>
-            <h3>
-              <a
-                className='hover'
-                href='https://yllsson.github.io/rockpaperscissors/'
-              >
-                Rock Paper Scissors
-              </a>
-            </h3>
-            <h3>
-              <i className='fab fa-html5'></i>
-              <i className='fab fa-css3-alt'></i>
-              <i className='fab fa-js-square'></i>
-            </h3>
-          </div>
-        </article>
       </section>
 
       <section className='contact' id='contact'>
