@@ -1,4 +1,6 @@
 import React from 'react';
+import Project from './Project';
+import projectsData from '../data/projectsData';
 
 const Portfolio = () => {
   return (
@@ -25,38 +27,18 @@ const Portfolio = () => {
 
       <section className='projects'>
         <h2 id='projects'>Projects</h2>
-        <article className='project'>
-          <img
-            src='pics/pomodoroTimer.png'
-            alt='Picture of my Pomodoro Timer project'
-          />
-          <a
-            className='imgLink'
-            href='https://yllsson.github.io/fcc-pomodoro-clock/'
-          ></a>
-          <div className='projectInfo'>
-            <h3>
-              <a
-                className='hover'
-                href='https://yllsson.github.io/fcc-pomodoro-clock/'
-              >
-                Pomodoro Timer
-              </a>
-            </h3>
-            <h3>
-              <i className='fab fa-react'></i>
-              <i className='fab fa-sass'></i>
-              <i className='fab fa-html5'></i>
-              <i className='fab fa-css3-alt'></i>
-              <i className='fab fa-js-square'></i>
-            </h3>
-          </div>
-        </article>
 
         <article className='project centeredImg'>
           <img
             src='pics/calculator.png'
             alt='Picture of my Calculator project'
+        {projectsData.map((project, idx) => (
+          <Project
+            name={project.name}
+            url={project.url}
+            img={project.img}
+            centeredImg={project.centeredImg}
+            key={idx}
           />
           <a
             className='imgLink'
@@ -109,6 +91,7 @@ const Portfolio = () => {
             </h3>
           </div>
         </article>
+        ))}
 
         <article className='project'>
           <img
