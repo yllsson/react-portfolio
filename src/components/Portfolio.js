@@ -14,12 +14,12 @@ const Portfolio = () => {
         <div className='titleImages' id='titleImages'>
           <img
             className='ylvaBg'
-            src='pics/ylvaBg.png'
+            src='/images/ylvaBg.png'
             alt='Illustration of Ylva sitting on a ball in a room with plants.'
           />
           <img
             className='justYlva'
-            src='pics/justYlva.png'
+            src='images/justYlva.png'
             alt='Illustration of Ylva sitting on a ball in a room with plants.'
           />
         </div>
