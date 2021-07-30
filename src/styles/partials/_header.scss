@@ -53,3 +53,89 @@ nav {
     }
   }
 }
+
+@media only screen and (max-width: $xl-screen) {
+  // header
+  header {
+    img {
+      width: 4rem;
+    }
+  }
+
+  nav {
+    a {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $l-desktop) {
+  .nav {
+    a {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  // nav
+  header {
+    padding: 1rem;
+
+    img {
+      margin-left: 2rem;
+      width: 3.5rem;
+    }
+  }
+
+  nav {
+    a {
+      font-size: 1.2rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $l-mobile) {
+  header {
+    padding: 1rem;
+
+    img {
+      margin-left: 0.5rem;
+      width: 3rem;
+    }
+  }
+
+  nav {
+    a {
+      font-size: 1rem;
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  header {
+    padding: 1rem;
+
+    img {
+      margin-left: 0;
+      width: 3rem;
+    }
+  }
+
+  nav {
+    a {
+      font-size: 1rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $s-mobile) {
+  nav {
+    a {
+      margin-right: 0.7rem;
+    }
+  }
+}

@@ -1,19 +1,6 @@
 // MEDIA QUERIES //
 
-@media only screen and (max-width: 1600px) {
-  // header
-  header {
-    img {
-      width: 4rem;
-    }
-  }
-
-  nav {
-    a {
-      font-size: 1.3rem;
-    }
-  }
-
+@media only screen and (max-width: $xl-desktop) {
   // title
   .titleHeaders {
     width: 45%;
@@ -58,13 +45,7 @@
   }
 }
 
-@media only screen and (max-width: 1440px) {
-  .nav {
-    a {
-      font-size: 1.4rem;
-    }
-  }
-
+@media only screen and (max-width: $l-desktop) {
   // title
   .title {
     margin: 0;
@@ -121,7 +102,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: $desktop) {
   // title
   .titleHeaders {
     padding-left: 2rem;
@@ -150,24 +131,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
-  // nav
-  header {
-    padding: 1rem;
-
-    img {
-      margin-left: 2rem;
-      width: 3.5rem;
-    }
-  }
-
-  nav {
-    a {
-      font-size: 1.2rem;
-      margin-right: 2rem;
-    }
-  }
-
+@media only screen and (max-width: $tablet) {
   // title
   .title {
     justify-content: space-between;
@@ -223,24 +187,7 @@
   }
 }
 
-@media only screen and (max-width: 540px) {
-  // nav
-  header {
-    padding: 1rem;
-
-    img {
-      margin-left: 0.5rem;
-      width: 3rem;
-    }
-  }
-
-  nav {
-    a {
-      font-size: 1rem;
-      margin-right: 1.5rem;
-    }
-  }
-
+@media only screen and (max-width: $l-mobile) {
   // title
   .title {
     // margin: 2rem 0 3rem;
@@ -342,24 +289,7 @@
   }
 }
 
-@media only screen and (max-width: 411px) {
-  // nav
-  header {
-    padding: 1rem;
-
-    img {
-      margin-left: 0;
-      width: 3rem;
-    }
-  }
-
-  nav {
-    a {
-      font-size: 1rem;
-      margin-right: 1rem;
-    }
-  }
-
+@media only screen and (max-width: $mobile) {
   // title
   .title {
     .titleImages {
@@ -380,14 +310,7 @@
   }
 }
 
-@media only screen and (max-width: 320px) {
-  // nav
-  nav {
-    a {
-      margin-right: 0.7rem;
-    }
-  }
-
+@media only screen and (max-width: $s-mobile) {
   // title
   .title {
     .titleHeaders {
