@@ -1,6 +1,8 @@
 import React from 'react';
 import Project from './Project';
+import ContactTile from './ContactTile';
 import projectsData from '../data/projectsData';
+import contactData from '../data/contactData';
 
 const Portfolio = () => {
   return (
@@ -43,38 +45,14 @@ const Portfolio = () => {
         <h2>Let's have a chat!</h2>
 
         <div className='contact-links'>
-          <a
-            className='contact-link active'
-            href='https://twitter.com/yllsson'
-            target='_blank'
-          >
-            <i className='fab fa-twitter'></i>
-            <span>@yllsson</span>
-          </a>
-          <a
-            className='contact-link'
-            href='https://github.com/yllsson'
-            target='_blank'
-          >
-            <i className='fab fa-github'></i>
-            <span>yllsson</span>
-          </a>
-          <a
-            className='contact-link'
-            href='mailto:ylvaeturner@gmail.com'
-            target='_blank'
-          >
-            <i className='fas fa-envelope'></i>
-            <span>ylvaeturner@gmail.com</span>
-          </a>
-          <a
-            className='contact-link'
-            href='https://www.linkedin.com/in/ylva-turner/'
-            target='_blank'
-          >
-            <i className='fab fa-linkedin'></i>
-            <span>Ylva Turner</span>
-          </a>
+          {contactData.map((contactTile, idx) => (
+            <ContactTile
+              text={contactTile.text}
+              url={contactTile.url}
+              iconName={contactTile.iconName}
+              key={idx}
+            />
+          ))}
         </div>
       </section>
     </main>
