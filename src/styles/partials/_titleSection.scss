@@ -1,0 +1,77 @@
+// TITLE SECTION
+.title {
+  width: 100%;
+  height: 90vh;
+  @include flexbox(row);
+  margin: 0;
+}
+
+.titleHeaders {
+  @include flexbox(column);
+  align-items: flex-start;
+  // display: inline-block;
+  padding-left: 3rem;
+  width: 40%;
+  height: 100%;
+
+  h1,
+  h2 {
+    width: 70%;
+    font-size: 4rem;
+    font-family: 'Poppins';
+    text-align: left;
+    color: $text-color;
+    // z-index: 1;
+    margin: 0.5rem;
+    opacity: 0;
+  }
+
+  &.loaded {
+    h1,
+    h2 {
+      opacity: 1;
+      transition: opacity 3s ease 2s;
+    }
+  }
+}
+
+.titleImages {
+  display: inline-block;
+  justify-self: flex-end;
+
+  height: 100%;
+  width: 50%;
+  position: relative;
+
+  .justYlva {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(76%);
+    right: -60rem;
+    z-index: 0;
+    width: 35%;
+  }
+
+  .ylvaBg {
+    position: absolute;
+    bottom: 50rem;
+    right: -80rem;
+    z-index: -1;
+    width: 90%;
+  }
+}
+
+.titleImages.loaded {
+  .justYlva {
+    right: 25%;
+    transition: right 2.5s 0.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
+  }
+
+  .ylvaBg {
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 0;
+    transition: bottom 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11),
+      right 2.5s cubic-bezier(0.28, 0.06, 0.23, 1.11);
+  }
+}

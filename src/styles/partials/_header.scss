@@ -1,0 +1,55 @@
+// HEADER //
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(212, 212, 212, 0.6);
+  background-color: #fff;
+
+  img {
+    height: 100%;
+    margin-left: 1rem;
+  }
+}
+
+nav {
+  height: 100%;
+  @include flexbox(row);
+
+  a {
+    @include flexbox(row);
+
+    color: $text-color;
+    height: 100%;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+
+    .hover {
+      position: relative;
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0px;
+        height: 2px;
+        transition: all 0.5s ease-in-out;
+        opacity: 0;
+        background-color: rgba($text-color, 0.6);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      .hover {
+        &:before,
+        &:after {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
