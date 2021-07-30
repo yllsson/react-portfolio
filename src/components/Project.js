@@ -3,11 +3,7 @@ import React from 'react';
 const Project = ({ name, url, img, centeredImg }) => {
   return (
     <article className={centeredImg ? 'project centeredImg' : 'project'}>
-      <img
-        src={`/images/${img}`}
-        alt={`Picture of my ${name} project`}
-        width='250px' //temporary width during development
-      />
+      <img src={`/images/${img}`} alt={`Picture of my ${name} project`} />
       <a className='imgLink' href={url}></a>
       <div className='projectInfo'>
         <h3>
