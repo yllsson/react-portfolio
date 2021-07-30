@@ -16,6 +16,12 @@ const projectsData = [
     url: 'https://yllsson.github.io/FCC-Random-Quote-Machine/',
     img: 'randomQuoteMachine.png',
     centeredImg: true
+  },
+  {
+    name: 'Markdown Previewer',
+    url: 'https://yllsson.github.io/fcc-markdown-previewer/',
+    img: 'mdPreviewer.png',
+    centeredImg: false
   }
 ];
 
