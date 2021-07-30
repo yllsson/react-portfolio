@@ -9,21 +9,23 @@ const Portfolio = () => {
   const [siteHasLoaded, setSiteHasLoaded] = useState(false);
 
   const assignLoadClasses = () => {
-    // TITLE ANIMATION //
-    const titleImgContainer = document.getElementById('titleImages');
-    const titleHeadersContainer = document.getElementById('titleHeaders');
+    if (siteHasLoaded) {
+      // TITLE ANIMATION //
+      const titleImgContainer = document.getElementById('titleImages');
+      const titleHeadersContainer = document.getElementById('titleHeaders');
 
-    titleImgContainer.classList.add('loaded');
-    titleHeadersContainer.classList.add('loaded');
+      titleImgContainer.classList.add('loaded');
+      titleHeadersContainer.classList.add('loaded');
 
-    // PROJECT SECTION CLASS ASSIGNMENT //
-    const projects = document.querySelectorAll('.project');
+      // PROJECT SECTION CLASS ASSIGNMENT //
+      const projects = document.querySelectorAll('.project');
 
-    projects.forEach((project, index) => {
-      if (index % 2 !== 0) {
-        project.classList.add('projectReversed');
-      }
-    });
+      projects.forEach((project, index) => {
+        if (index % 2 !== 0) {
+          project.classList.add('projectReversed');
+        }
+      });
+    }
   };
 
   useEffect(() => {
